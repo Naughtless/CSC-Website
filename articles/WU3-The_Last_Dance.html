@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Cyber Security Community</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="./../images/logo_csc.png" type="image/x-icon" />
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" href="./../css/base.css" />
+        <link rel="stylesheet" href="./../css/article.css" />
+        <link rel="stylesheet" href="./../css/index.css" />
+        <link rel="stylesheet" href="./../css/owlCarousel.css" />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div id="content">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top moved">
+                <div class="container-fluid custom-mobile-margin-effect">
+                    <a class="navbar" href="./../index.html">
+                        <img src="./../images/logo_csc_50x50.png" class="img-fluid" alt="" />
+                    </a>
+                    <button
+                        class="navbar-toggler justify-content-end"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#web-navigation"
+                        aria-controls="navigation"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="web-navigation">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link ms-3 me-lg-3 custom-navbar-underline-effect"
+                                    aria-current="page"
+                                    href="./../index.html"
+                                    >HOME</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link ms-3 me-lg-3 custom-navbar-underline-effect"
+                                    aria-current="page"
+                                    href="./../article.html"
+                                    >ARTICLE</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link ms-3 me-lg-3 custom-navbar-underline-effect"
+                                    aria-current="page"
+                                    href="./../division.html"
+                                    >DIVISION</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link ms-3 me-lg-3 custom-navbar-underline-effect"
+                                    aria-current="page"
+                                    href="./../ourpeople.html"
+                                    >OUR PEOPLE</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="content-bg">
+                <div class="write">
+                    <h2><div class="article-title">WU3 - The Last Dance</div></h2>
+                    <p style="font-family: &quot;Consolas&quot;">Bill Elim, Jayson Adrian S</p>
+                    <br />
+                    <img src="../images/article/WU 3/Bill & Jayson/The Last Dance/0.png" alt="" class="img-fluid" />
+                    <p class="penjelasan">Diberikan sebuah script python beserta outputnya</p>
+                    <img src="../images/article/WU 3/Bill & Jayson/The Last Dance/1.png" alt="" class="img-fluid" />
+
+                    <p class="penjelasan">out.txt</p>
+                    <img src="../images/article/WU 3/Bill & Jayson/The Last Dance/2.png" alt="" class="img-fluid" />
+                    <p class="penjelasan">Nah sebelumnya kita harus belajar dulu mengenai stream cipher</p>
+                    <br />
+                    <h3 class="penjelasan">Stream Cipher</h3>
+                    <p class="penjelasan">
+                        Stream cipher adalah enkripsi dengan perbandingan key dan text 1:1, artinya, tiap karakter di
+                        enkripsi secara independen, jadi mengubah salah satu karakter pada text tidak akan mengubah
+                        keseluruhan ciphertext
+                    </p>
+                    <p class="penjelasan">Mari kita lihat bentuk stream cipher yang paling sederhana, xor cipher</p>
+
+                    <img src="../images/article/WU 3/Bill & Jayson/The Last Dance/3.png" alt="" class="img-fluid" />
+                    <p class="penjelasan">
+                        Seperti yang kita tahu mengubah satu karakter tidak akan mengubah ciphertext secara drastis
+                        karena enkripsi nya satu banding satu
+                    </p>
+
+                    <img src="../images/article/WU 3/Bill & Jayson/The Last Dance/4.png" alt="" class="img-fluid" />
+                    <p class="penjelasan">
+                        Tapi apa yang terjadi kalau plaintextnya lebih panjang dari key nya? Maka keynya akan diulang
+                    </p>
+
+                    <img src="../images/article/WU 3/Bill & Jayson/The Last Dance/5.png" alt="" class="img-fluid" />
+                    <p class="penjelasan">
+                        Nah tentunya ini kurang aman, apalagi kalau nge encrypt text yang cukup panjang dengan key yang
+                        pendek, jadi apa yang perlu kita lakukan??
+                    </p>
+                    <p class="penjelasan">
+                        Salah satu ide stream cipher adalah menggunakan key original sebagai seed saja untuk
+                        meng-generate random bytes yang lebih banyak, konsep nya mirip dengan seed minecraft. Bytes baru
+                        ini lah yang bakal digunakan untuk mengenkripsi, bytes baru ini disebut dengan keystream.
+                        Berikut implementasi sederhananya
+                    </p>
+
+                    <img
+                        src="../images/article/WU 3/Bill & Jayson/The Last Dance/6.png"
+                        alt=""
+                        class="img-fluid"
+                    /><br />
+                    <h3 class="penjelasan">Known plaintext attack</h3>
+                    <p class="penjelasan">
+                        Sekarang gimana caranya kita menyerang sebuah stream cipher? Salah satu caranya adalah merecover
+                        keystream apabila sudah mengetahui sepasang plaintext dan ciphertext
+                    </p>
+                    <p class="penjelasan">Biar simpel kita pake XOR Cipher aja ya lagi</p>
+
+                    <img src="../images/article/WU 3/Bill & Jayson/The Last Dance/8.png" alt="" class="img-fluid" />
+                    <p class="penjelasan">
+                        Seperti yang dilihat kita bisa merecover keystream karena identitas utama XOR yang bisa dibolak
+                        balik
+                    </p>
+
+                    <img src="../images/article/WU 3/Bill & Jayson/The Last Dance/9.png" alt="" class="img-fluid" />
+                    <p class="penjelasan">
+                        Nah dari sini kita udah dapet key sehingga kita bisa mendekripsi semua ciphertext yang ada
+                    </p>
+                    <p class="penjelasan"><b>Back to soal</b></p>
+                    <p class="penjelasan">
+                        Nah sekarang dengan ilmu known plaintext yang sudah kita pelajari, kita bisa melihat dengan
+                        jelas cara menyelesaikan soal ini.
+                    </p>
+
+                    <img src="../images/article/WU 3/Bill & Jayson/The Last Dance/10.png" alt="" class="img-fluid" />
+                    <p class="penjelasan">
+                        Disini diberikan sebuah message (known) yang di enkripsi, serta flag yang di enkripsi
+                        menggunakan key yang sama. Enkripsinya ini menggunakan ChaCha20, yang merupakan sebuah stream
+                        cipher.
+                    </p>
+                    <p class="penjelasan">Jadi tinggal recover keystream lalu di xor sama encrypted flag saja :)</p>
+
+                    <img src="../images/article/WU 3/Bill & Jayson/The Last Dance/11.png" alt="" class="img-fluid" />
+
+                    <br />
+                    <img src="../images/article/WU 3/Bill & Jayson/The Last Dance/12.png" alt="" class="img-fluid" />
+                    <br />
+                    <p style="font-family: &quot;Consolas&quot;; font-size: small">
+                        Flag: HTB{und3r57AnD1n9_57R3aM_C1PH3R5_15_51mPl3_a5_7Ha7}
+                    </p>
+                    <p class="penjelasan">
+                        Note: ini ada garbage value di belakang karena messagenya lebih panjang dari flagnya jadinya
+                        keystreamnya juga lebih panjang meskipun ga kepake wkwk.
+                    </p>
+                    <p class="penjelasan">
+                        Note-Note: ChaCha20 ini adalah algoritma untuk generasi keystream aja, enkripsinya sendiri tetap
+                        di xor biasa makanya bisa kita recover seperti XOR cipher.
+                    </p>
+                    <p class="penjelasan">
+                        Note-Note-Note: iv dan nonce dan lain-lain itu ada pengertiannya sendiri, tapi karena ini
+                        dipakainya sama semua jadi kita tidak perlu terlalu deepdive dengan itu, anggap aja bagian dari
+                        key.
+                    </p>
+                    <br />
+                    <h3>Thank you for reading!</h3>
+                </div>
+            </div>
+            <footer class="website-footer bg-dark">
+                <div class="footer d-flex justify-content-center">
+                    <ul class="list-unstyled flex-row">
+                        <li class="list-inline-item h4 mt-3 ps-3 pe-3 m-0">
+                            <a
+                                class="btn-floating btn-tw text-light"
+                                href="https://twitter.com/cscbinus"
+                                target="_blank"
+                            >
+                                <i class="fab fa-twitter"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item h4 mt-3 ps-3 pe-3 m-0">
+                            <a
+                                class="btn-floating btn-gplus text-light"
+                                href="mailto:cscbinanusantara@gmail.com"
+                                target="_blank"
+                            >
+                                <i class="fab fa-google-plus-g"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item h4 mt-3 ps-3 pe-3 m-0">
+                            <a
+                                class="btn-floating btn-li text-light"
+                                href="https://www.linkedin.com/company/cyber-security-community"
+                                target="_blank"
+                            >
+                                <i class="fab fa-linkedin-in"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item h4 mt-3 ps-3 pe-3 m-0">
+                            <a
+                                class="btn-floating btn-li text-light"
+                                href="https://timeline.line.me/user/_dcmePWpWazdrgV3mGzrSArsteB0AheHBdXnJD5o?utm_medium=windows&utm_source=desktop&utm_campaign=OA_Profile"
+                                target="_blank"
+                            >
+                                <i class="fab fa-line"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item h4 mt-3 ps-3 pe-3 m-0">
+                            <a
+                                class="btn-floating btn-li text-light"
+                                href="https://www.instagram.com/cscbinus/"
+                                target="_blank"
+                            >
+                                <i class="fab fa-instagram"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item h4 mt-3 ps-3 pe-3 m-0">
+                            <a
+                                class="btn-floating btn-li text-light"
+                                href="https://www.facebook.com/cscbinus/"
+                                target="_blank"
+                            >
+                                <i class="fab fa-facebook-f"> </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </body>
+</html>

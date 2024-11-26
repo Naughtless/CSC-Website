@@ -1,0 +1,82 @@
+.carousel-wrapper {
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.owl-carousel {
+    position: relative;
+}
+
+.owl-nav {
+    font-size: 50px;
+}
+
+.owl-prev {
+    position: absolute;
+    font-size: 50px;
+    left: 0;
+    top: 0;
+    transform: translate(0, 25%);
+    height: 50%;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.owl-next {
+    position: absolute;
+    font-size: 50px;
+    right: 0;
+    top: 0;
+    transform: translate(0, 25%);
+    height: 50%;
+}
+
+#carousel > * > * > * > * > * > h3 {
+    font-size: 20px;
+    bottom: 0px;
+    left: 50%;
+    color: white;
+    z-index: 100;
+}
+
+#carousel > * > * > * > * > * > h3 > p {
+    font-size: 15px;
+}
+
+.carousel > * > * > * > * > * > h3 {
+    font-size: 20px;
+    bottom: 0px;
+    left: 50%;
+    color: white;
+    z-index: 100;
+}
+
+.carousel > * > * > * > * > * > h3 > p {
+    font-size: 15px;
+}
+
+.carousel {
+    width: 80%;
+    margin: auto;
+}
+
+.imgContainer {
+    width: 100% !important;
+    height: 420px !important;
+    overflow-y: hidden;
+}
+
+.imgContainer > img {
+    object-fit: cover;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 420px) {
+    .imgContainer {
+        height: 350px !important;
+    }
+}

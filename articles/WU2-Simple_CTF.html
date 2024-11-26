@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Cyber Security Community</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="./../images/logo_csc.png" type="image/x-icon" />
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" href="./../css/base.css" />
+        <link rel="stylesheet" href="./../css/article.css" />
+        <link rel="stylesheet" href="./../css/index.css" />
+        <link rel="stylesheet" href="./../css/owlCarousel.css" />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+
+    <body>
+        <div id="content">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top moved">
+                <div class="container-fluid custom-mobile-margin-effect">
+                    <a class="navbar" href="./../index.html">
+                        <img src="./../images/logo_csc_50x50.png" class="img-fluid" alt="" />
+                    </a>
+                    <button
+                        class="navbar-toggler justify-content-end"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#web-navigation"
+                        aria-controls="navigation"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="web-navigation">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link ms-3 me-lg-3 custom-navbar-underline-effect"
+                                    aria-current="page"
+                                    href="./../index.html"
+                                    >HOME</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link ms-3 me-lg-3 custom-navbar-underline-effect"
+                                    aria-current="page"
+                                    href="./../article.html"
+                                    >ARTICLE</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link ms-3 me-lg-3 custom-navbar-underline-effect"
+                                    aria-current="page"
+                                    href="./../division.html"
+                                    >DIVISION</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link ms-3 me-lg-3 custom-navbar-underline-effect"
+                                    aria-current="page"
+                                    href="./../ourpeople.html"
+                                    >OUR PEOPLE</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link ms-3 me-lg-3 custom-navbar-underline-effect"
+                                    aria-current="page"
+                                    href="./../event.html"
+                                    >EVENT</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="content-bg">
+                <div class="write">
+                    <h2><div class="article-title">Simple CTF</div></h2>
+                    <p class="writer">Muhammad Mazaya R. S. & Seraphine Amanda Honoris</p>
+                    <br />
+                    <p class="penjelasan">
+                        Pada writeup kali saya mencoba bermain TryHackMe dengan machine yang bernama Simple CTF
+                    </p>
+                    <p class="penjelasan">Diberikan sebuah IP address :</p>
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img1.jpg" alt="" class="img-fluid" />
+                    <p class="penjelasan">
+                        Sebelumnya saya sudah menyambungkan ke VPN yang disediakan oleh TryHackMe Ketika saya masukan IP
+                        tersebut dalam browser, muncullah halaman berikut:
+                    </p>
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img2.jpg" alt="" class="img-fluid" />
+                    <p class="penjelasan">
+                        Halaman tersebut tidak menunjukan apa-apa sehingga saya langsung saja mencoba enumeration dengan
+                        nmap, lalu ini hasilnya :
+                    </p>
+
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img3.jpg" alt="" class="img-fluid" />
+                    <p class="penjelasan">Terlihat ada 3 port yang terbuka</p>
+                    <p class="penjelasan">
+                        Lalu saya juga melakukan scanning dengan Gobuster untuk menemukan directory lainnya
+                    </p>
+
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img4.jpg" alt="" class="img-fluid" />
+                    <p class="penjelasan">Gobuster menemukan sebuah directory yaitu /simple</p>
+                    <p class="penjelasan">
+                        Saya lalu mencoba membukanya di browser dan setelah saya melihat-lihat isi dari halaman tersebut
+                        saya menemukan bahwa halaman tersebut menggunakan CMS Made Simple version 2.2.8
+                    </p>
+
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img5.jpg" alt="" class="img-fluid" />
+                    <p class="penjelasan">Lalu saya cari exploitnya di browser dan menemukannya</p>
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img6.jpg" alt="" class="img-fluid" />
+                    <p class="penjelasan">Seperti yang tertera, vulnerabilitynya berupa SQL injection.</p>
+                    <p class="penjelasan">
+                        Saya langsung saja mendownload script python untuk exploitasi tersebut dan menjalankannya.
+                    </p>
+                    <p class="penjelasan">Python script tersebut ternyata tidak bisa dijalankan begitu saja</p>
+                    <p class="penjelasan">
+                        Karena mungkin script tersebut dibuat beberapa tahun yang lalu dan menggunakan versi python yang
+                        berbeda dengan punya saya
+                    </p>
+                    <p class="penjelasan">Saya harus merubah beberapa baris code terlebih dahulu</p>
+                    <p class="penjelasan">
+                        Yang saya hapus adalah library termcolor dan merubah fungsi cprint menjadi print dan saya juga
+                        menambahkan beberapa ( ) pada fungsi print supaya bisa dijalankan
+                    </p>
+                    <p class="penjelasan">Berikut adalah script yang asli :</p>
+
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img7.jpg" alt="" class="img-fluid" />
+
+                    <p class="penjelasan">Saya mengubahnya menjadi seperti berikut :</p>
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img8.jpg" alt="" class="img-fluid" />
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img9.jpg" alt="" class="img-fluid" />
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img10.jpg" alt="" class="img-fluid" />
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img11.jpg" alt="" class="img-fluid" />
+                    <p class="penjelasan">
+                        Saya mendapatkan masalah saat mencoba ngecrack passwordnya, sepertinya ada masih ada masalah
+                        pada code pythonnya, namun password yang terenkripsinya dan saltnya sudah ditemukan.
+                    </p>
+
+                    <p class="penjelasan">Saya gunakan hashcat untuk mendapatkan passwordnya</p>
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img12.jpg" alt="" class="img-fluid" />
+                    <p class="penjelasan">Setelah mendapatkan username dan passwordnya, saya coba untuk masuk ke ssh</p>
+
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img13.jpg" alt="" class="img-fluid" />
+                    <p class="penjelasan">Lalu saya cari apa saja yang ada didalamnya</p>
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img14.jpg" alt="" class="img-fluid" />
+                    <p class="penjelasan">Saya mendapatkan flag pertama dalam user.txt</p>
+                    <p class="penjelasan">Flag Pertama:</p>
+                    <p class="flag">G00d j0b, keep up!</p>
+                    <p class="penjelasan">Saya masuk ke directory /home dan menemukan user lain yang bernama sunbath</p>
+
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img15.jpg" alt="" class="img-fluid" />
+                    <p class="penjelasan">Setelah itu saya mencoba untuk melakukan privilege escalation</p>
+                    <p class="penjelasan">
+                        Pertama saya jalankan command sudo -l untuk mengetahui apa saja yang bisa dijalankan oleh user
+                        yang kita pakai
+                    </p>
+
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img16.jpg" alt="" class="img-fluid" />
+                    <p class="penjelasan">
+                        User tersebut bisa menjalankan vim tanpa password dan ini sangat berguna untuk privilege
+                        escalation
+                    </p>
+                    <p class="penjelasan">
+                        Selanjutnya saya mencari command yang menggunakan vim untuk privilege escalation dibrowser dan
+                        menemukan sebuah website bernama gtfobins.
+                    </p>
+                    <p class="penjelasan">Dan disini saya menemukan apa yang saya cari.</p>
+                    <img src="./../images/article/WU KELOMPOK 2/GRUP 2/Simple CTF/img17.jpg" alt="" class="img-fluid" />
+                    <p class="penjelasan">
+                        Setelah itu, saya mencoba masuk ke /root dan menemukan sebuah file txt root.txt yang berisikan
+                        flag terakhir.
+                    </p>
+                    <p class="penjelasan">Flag Terakhir:</p>
+                    <p class="flag">W3ll d0n3, You made it!</p>
+
+                    <br />
+                    <h3>Thank you for reading!</h3>
+                </div>
+            </div>
+            <footer class="website-footer bg-dark">
+                <div class="footer d-flex justify-content-center">
+                    <ul class="list-unstyled flex-row">
+                        <li class="list-inline-item h4 mt-3 ps-3 pe-3 m-0">
+                            <a
+                                class="btn-floating btn-tw text-light"
+                                href="https://twitter.com/cscbinus"
+                                target="_blank"
+                            >
+                                <i class="fab fa-twitter"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item h4 mt-3 ps-3 pe-3 m-0">
+                            <a
+                                class="btn-floating btn-gplus text-light"
+                                href="mailto:cscbinanusantara@gmail.com"
+                                target="_blank"
+                            >
+                                <i class="fab fa-google-plus-g"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item h4 mt-3 ps-3 pe-3 m-0">
+                            <a
+                                class="btn-floating btn-li text-light"
+                                href="https://www.linkedin.com/company/cyber-security-community"
+                                target="_blank"
+                            >
+                                <i class="fab fa-linkedin-in"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item h4 mt-3 ps-3 pe-3 m-0">
+                            <a
+                                class="btn-floating btn-li text-light"
+                                href="https://timeline.line.me/user/_dcmePWpWazdrgV3mGzrSArsteB0AheHBdXnJD5o?utm_medium=windows&utm_source=desktop&utm_campaign=OA_Profile"
+                                target="_blank"
+                            >
+                                <i class="fab fa-line"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item h4 mt-3 ps-3 pe-3 m-0">
+                            <a
+                                class="btn-floating btn-li text-light"
+                                href="https://www.instagram.com/cscbinus/"
+                                target="_blank"
+                            >
+                                <i class="fab fa-instagram"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item h4 mt-3 ps-3 pe-3 m-0">
+                            <a
+                                class="btn-floating btn-li text-light"
+                                href="https://www.facebook.com/cscbinus/"
+                                target="_blank"
+                            >
+                                <i class="fab fa-facebook-f"> </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </body>
+</html>

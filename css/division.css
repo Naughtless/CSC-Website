@@ -1,0 +1,84 @@
+body {
+    background-color: black !important;
+}
+
+.division {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1330px;
+    margin: auto;
+}
+
+.division-title {
+    margin-top: 6vw;
+    margin-bottom: 2.5vw;
+    font-size: 5vw;
+    color: white;
+    text-align: center;
+}
+
+.division-logo {
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.division-logo img {
+    width: 250px;
+    height: 250px;
+}
+
+.division-content {
+    width: 100%;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.card {
+    border-radius: 20px !important;
+    height: 300px !important;
+}
+
+.card-header {
+    background-color: rgba(148, 66, 18, 100%) !important;
+    border-radius: 20px 20px 0px 0px !important;
+    padding: 20px 0 !important;
+}
+
+.card-body {
+    background-color: rgba(241, 137, 76, 20%);
+    border-radius: 0px 0px 20px 20px !important;
+    height: 300px;
+}
+
+@media (max-width: 1024px) {
+    .division-title {
+        margin-top: 15vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .division-title {
+        margin-top: 17.5vw;
+    }
+
+    .division-content {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 500px !important;
+        width: 100% !important;
+        height: unset !important;
+    }
+
+    .card-body {
+        height: unset !important;
+    }
+
+    .division-jobdesc {
+        margin-bottom: 10%;
+    }
+}

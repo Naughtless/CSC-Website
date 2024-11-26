@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    scrollbar-color: #828282 #cecece;
+    color: white !important;
+}
+
+.templating {
+    padding: 0 25vh;
+    background-color: black;
+}
+
+.content-card {
+    padding-bottom: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.title:hover {
+    color: greenyellow;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.walk {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 2rem 0;
+}
+
+.gambar {
+    margin: 1rem 0;
+    height: 50%;
+}
+
+@media screen and (max-width: 648px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .templating {
+        padding: 0 5vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .walk {
+        font-size: xx-large;
+    }
+}
+
+.content-bg {
+    background-color: black;
+    padding: 8rem 0 2rem 0;
+    width: 100%;
+}
+
+.write {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 20%;
+}
+
+.article-title {
+    color: greenyellow;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.penjelasan {
+    padding: 1rem 0 0 0;
+}
+
+.flag {
+    font-family: "Consolas";
+    font-size: small;
+}
+
+.writer {
+    font-family: "Consolas";
+}
+
+.mark {
+    background-color: gray;
+}
